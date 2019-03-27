@@ -123,7 +123,8 @@ PRODUCT_PACKAGES += \
 
 # Notch style overlay
 PRODUCT_PACKAGES += \
-    NotchNoFillOverlay
+    NotchNoFillOverlay \
+    NotchBarKiller
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
