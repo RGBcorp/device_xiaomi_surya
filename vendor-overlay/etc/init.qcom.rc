@@ -14,7 +14,11 @@ on property:init.svc.vendor.cnss_diag=running
 
 on property:init.svc.vendor.tcpdump=running
     stop vendor.tcpdump
-
+	
+on property:sys.boot_completed=1
+    #Reinit lmkd to reconfigure lmkd properties
+    setprop lmkd.reinit 1
+	
 on post-fs && property:ro.product.device=karna
     mount none /dev/null /system/app/NfcNci/NfcNci.apk bind
     setprop ro.power_profile.override power_profile_karna
