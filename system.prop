@@ -24,6 +24,7 @@ ro.netflix.bsp_rev=Q6150-17263-1
 ro.sf.lcd_density=440
 
 # Display Feature
+debug.hwui.renderer=skiagl
 debug.cpurend.vsync=false
 
 # Zygote
