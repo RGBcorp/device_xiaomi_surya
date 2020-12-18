@@ -8,6 +8,8 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 dalvik.vm.dex2oat64.enabled=true
 
 # Graphics
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 vendor.display.disable_rotator_downscale=1
 
 # Telephony
