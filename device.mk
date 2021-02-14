@@ -177,8 +177,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     WifiOverlay
 
+# Soong namespace
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    kernel/xiaomi/surya
 
 # WFD
 PRODUCT_PACKAGES += \
