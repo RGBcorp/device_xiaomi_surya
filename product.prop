@@ -7,6 +7,10 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# Charger Mode
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.charger.enable_suspend=true
+
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
