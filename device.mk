@@ -54,6 +54,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.camera.device@1.0
+
 # Settings
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
