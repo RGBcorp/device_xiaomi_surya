@@ -674,6 +674,16 @@
          config_defaultPeakRefreshRate will act as the default frame rate. -->
     <integer name="config_defaultRefreshRate">90</integer>
 
+    <!-- Default value for proximity check on screen wake
+     NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
+    <bool name="config_proximityCheckOnWake">true</bool>
+    <integer name="config_proximityCheckTimeout">3000</integer>
+    <bool name="config_proximityCheckOnWakeEnabledByDefault">false</bool>
+
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">24.0dip</dimen>
+    <dimen name="status_bar_height_landscape">24.0dip</dimen>
+
     <!-- Applications which are disabled unless matching a particular sku -->
     <string-array name="config_disableApksUnlessMatchedSku_apk_list" translatable="false">
         <item>com.qualcomm.qti.performancemode</item>
