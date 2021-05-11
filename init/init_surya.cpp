@@ -107,6 +107,30 @@ void load_device_properties() {
     }
 }
 
+/* From Magisk@jni/magiskhide/hide_utils.c */
+static const char *snet_prop_key[] = {
+    "ro.boot.vbmeta.device_state",
+    "ro.boot.verifiedbootstate",
+    "ro.boot.flash.locked",
+    NULL
+};
+
+static const char *snet_prop_value[] = {
+    "locked",
+    "green",
+    "1",
+    NULL
+};
+
+static void workaround_snet_properties() {
+
+    // Hide all sensitive props
+    for (int i = 0; snet_prop_key[i]; ++i) {
+        property_override(snet_prop_key[i], snet_prop_value[i]);
+    }
+
+}
+
 void load_dalvik_properties()
 {
     struct sysinfo sys;
@@ -149,4 +173,5 @@ void vendor_load_properties()
 {
     load_dalvik_properties();
     load_device_properties();
+    workaround_snet_properties();
 }
