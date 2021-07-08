@@ -95,8 +95,8 @@ void set_device_props(const string fingerprint, const string description,
 void load_device_properties() {
     string hwname = GetProperty("ro.boot.hwname", "");
 
-    string fingerprint = "google/sunfish/sunfish:11/RQ3A.210605.005/7349499:user/release-keys";
-    string description = "sunfish-user 11 RQ2A.210505.002 7246365 release-keys";
+    string fingerprint = "google/sunfish/sunfish:11/RQ3A.210705.001/7380771:user/release-keys";
+    string description = "sunfish-user 11 RQ3A.210705.001 7380771 release-keys";
 
     if (hwname == "surya") {
         set_device_props(fingerprint, description, "POCO", "surya", "Poco X3 NFC");
