@@ -26,4 +26,8 @@ PRODUCT_MODEL := POCO X3
 PRODUCT_MANUFACTURER := Xiaomi
 
 BUILD_FINGERPRINT := POCO/surya_global/surya:11/RKQ1.200826.002/V12.5.1.0.RJGEUXM:user/release-keys
+
+# Inherit from custom vendor
+$(call inherit-product, vendor/ANXCamera/config.mk)
+
 TARGET_INCLUDE_PIXEL_CHARGER := true
